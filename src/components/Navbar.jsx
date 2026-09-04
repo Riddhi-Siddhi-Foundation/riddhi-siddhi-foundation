@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Navbar.css";
-import logo from "../assets/riddhi_logo.png";
+import logo from "../assets/riddhi_logo.webp";
 import { NavLink, Link } from "react-router-dom";
 
 const items = [

@@ -2,15 +2,15 @@ import React, { useState } from "react";
 import "./Gallery.css";
 
 // Offline gallery images
-import gallery1 from "../../assets/gallery1.png";
-import gallery2 from "../../assets/gallery2.png";
-import gallery3 from "../../assets/gallery3.png";
-import gallery4 from "../../assets/gallery4.png";
-import gallery5 from "../../assets/gallery5.png";
-import gallery6 from "../../assets/gallery6.png";
-import gallery7 from "../../assets/gallery7.png";
-import gallery8 from "../../assets/gallery8.png";
-import gallery9 from "../../assets/gallery9.png";
+import gallery1 from "../../assets/gallery1.webp";
+import gallery2 from "../../assets/gallery2.webp";
+import gallery3 from "../../assets/gallery3.webp";
+import gallery4 from "../../assets/gallery4.webp";
+import gallery5 from "../../assets/gallery5.webp";
+import gallery6 from "../../assets/gallery6.webp";
+import gallery7 from "../../assets/gallery7.webp";
+import gallery8 from "../../assets/gallery8.webp";
+import gallery9 from "../../assets/gallery9.webp";
 
 const photos = [
   [

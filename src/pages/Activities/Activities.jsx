@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "./Activities.css";
 import activitiesData from "./activitiesData";
 
-import activitiesHero from "../../assets/activities-hero.png";
+import activitiesHero from "../../assets/activities-hero.webp";
 
 
 function Activities() {

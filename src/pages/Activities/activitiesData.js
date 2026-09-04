@@ -1,13 +1,13 @@
-import educationImage from "../../assets/education.png";
-import healthImage from "../../assets/health.png";
-import womenEmpowermentImage from "../../assets/women-empowerment.png";
-import ruralDevelopmentImage from "../../assets/rural-development.png";
-import skillDevelopmentImage from "../../assets/skill-development.png";
-import environmentImage from "../../assets/environment.png";
-import shgPromotionImage from "../../assets/shg-promotion.png";
-import legalAwarenessImage from "../../assets/legal-awareness.png";
-import seniorCitizenImage from "../../assets/senior-citizen.png";
-import disasterReliefImage from "../../assets/disaster-relief.png";
+import educationImage from "../../assets/education.webp";
+import healthImage from "../../assets/health.webp";
+import womenEmpowermentImage from "../../assets/women-empowerment.webp";
+import ruralDevelopmentImage from "../../assets/rural-development.webp";
+import skillDevelopmentImage from "../../assets/skill-development.webp";
+import environmentImage from "../../assets/environment.webp";
+import shgPromotionImage from "../../assets/shg-promotion.webp";
+import legalAwarenessImage from "../../assets/legal-awareness.webp";
+import seniorCitizenImage from "../../assets/senior-citizen.webp";
+import disasterReliefImage from "../../assets/disaster-relief.webp";
 
 
 const activitiesData = [

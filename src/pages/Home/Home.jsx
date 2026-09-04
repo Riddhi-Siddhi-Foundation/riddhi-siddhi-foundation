@@ -8,19 +8,19 @@ import CountUp from "../../components/CountUp";
    Place these files inside: src/assets/
 ========================================================= */
 
-import homeHero from "../../assets/home-hero.png";
-import aboutHome from "../../assets/about-home.png";
-import missionImage from "../../assets/mission.png";
-import educationImage from "../../assets/education.png";
-import healthImage from "../../assets/health.png";
-import womenEmpowermentImage from "../../assets/women-empowerment.png";
-import ruralDevelopmentImage from "../../assets/rural-development.png";
-import skillDevelopmentImage from "../../assets/skill-development.png";
-import environmentImage from "../../assets/environment.png";
-import gallery1 from "../../assets/gallery-1.png";
-import gallery2 from "../../assets/gallery-2.png";
-import gallery3 from "../../assets/gallery-3.png";
-import gallery4 from "../../assets/gallery-4.png";
+import homeHero from "../../assets/home-hero.webp";
+import aboutHome from "../../assets/about-home.webp";
+import missionImage from "../../assets/mission.webp";
+import educationImage from "../../assets/education.webp";
+import healthImage from "../../assets/health.webp";
+import womenEmpowermentImage from "../../assets/women-empowerment.webp";
+import ruralDevelopmentImage from "../../assets/rural-development.webp";
+import skillDevelopmentImage from "../../assets/skill-development.webp";
+import environmentImage from "../../assets/environment.webp";
+import gallery1 from "../../assets/gallery-1.webp";
+import gallery2 from "../../assets/gallery-2.webp";
+import gallery3 from "../../assets/gallery-3.webp";
+import gallery4 from "../../assets/gallery-4.webp";
 
 
 /* =========================================================

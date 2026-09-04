@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./About.css";
 
-import aboutFoundation from "../../assets/about-foundation.png";
+import aboutFoundation from "../../assets/about-foundation.webp";
 
 
 const activities = [

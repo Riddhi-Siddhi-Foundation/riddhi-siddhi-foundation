@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./Support.css";
 
-import supportImage from "../../assets/support.png";
+import supportImage from "../../assets/support.webp";
 
 const ways = [
   [
