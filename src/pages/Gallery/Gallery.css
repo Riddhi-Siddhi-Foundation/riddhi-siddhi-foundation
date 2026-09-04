@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
+
+.gallery-page {
+    --green: #063b24;
+    --gold: #d9a400;
+    --burgundy: #8b1e2d;
+    --cream: #fffdf7;
+    --muted: #657068;
+    padding-top: 20px;
+    background: var(--cream);
+    color: var(--green);
+    min-height: 100vh
+}
+
+.gallery-page * {
+    box-sizing: border-box
+}
+
+.section-shell {
+    width: min(1200px, calc(100% - 40px));
+    margin: auto
+}
+
+.eyebrow {
+    font: 700 12px Arial;
+    letter-spacing: 2px;
+    color: var(--gold)
+}
+
+.gallery-hero {
+    padding: 75px 0 45px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+
+.gallery-hero h1 {
+    margin: 12px 0;
+    font: 400 clamp(50px, 5vw, 68px) "DM Serif Display", Georgia, serif
+}
+
+.gallery-hero h1 span {
+    color: var(--burgundy)
+}
+
+.gallery-hero p {
+    color: var(--muted);
+    font: 15px Arial
+}
+
+.camera-mark {
+    width: 120px;
+    height: 90px;
+    border: 2px solid rgba(6, 59, 36, .08);
+    border-radius: 15px;
+    display: grid;
+    place-items: center;
+    font-size: 45px;
+    color: rgba(217, 164, 0, .2)
+}
+
+.gallery-content {
+    padding-bottom: 90px
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px
+}
+
+.gallery-grid button {
+    height: 260px;
+    position: relative;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    border-radius: 12px;
+    background: #ddd;
+    cursor: pointer;
+    text-align: left
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: .45s
+}
+
+.gallery-grid button:hover img {
+    transform: scale(1.06)
+}
+
+.gallery-grid button:after {
+    content: "";
+    position: absolute;
+    inset: 35% 0 0;
+    background: linear-gradient(transparent, rgba(0, 0, 0, .75))
+}
+
+.gallery-grid button div {
+    position: absolute;
+    z-index: 2;
+    left: 18px;
+    bottom: 18px;
+    color: #fff
+}
+
+.gallery-grid span {
+    display: block;
+    color: #f0c337;
+    font: 700 9px Arial;
+    letter-spacing: 1px;
+    text-transform: uppercase
+}
+
+.gallery-grid strong {
+    display: block;
+    margin-top: 5px;
+    font: 400 22px "DM Serif Display", Georgia, serif
+}
+
+.lightbox {
+    position: fixed;
+    inset: 0;
+    z-index: 2000;
+    background: rgba(0, 20, 12, .92);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 25px
+}
+
+.lightbox>button {
+    position: absolute;
+    right: 25px;
+    top: 20px;
+    width: 44px;
+    height: 44px;
+    border: 1px solid rgba(255, 255, 255, .3);
+    border-radius: 50%;
+    background: transparent;
+    color: #fff;
+    font-size: 28px
+}
+
+.lightbox img {
+    max-width: min(1000px, 95vw);
+    max-height: 75vh;
+    object-fit: contain;
+    border-radius: 10px
+}
+
+.lightbox div {
+    width: min(1000px, 95vw);
+    color: #fff;
+    padding-top: 14px
+}
+
+.lightbox div span {
+    color: #f0c337;
+    font: 700 10px Arial
+}
+
+.lightbox h2 {
+    margin: 4px 0;
+    font: 400 28px "DM Serif Display", Georgia, serif
+}
+
+@media(max-width:800px) {
+    .gallery-page {
+        padding-top: 20px
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr 1fr
+    }
+
+    .camera-mark {
+        display: none
+    }
+}
+
+@media(max-width:520px) {
+     .gallery-page {
+        padding-top: 0px
+    }
+    .section-shell {
+        width: calc(100% - 30px)
+    }
+
+    .gallery-hero h1 {
+        font-size: 46px
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr
+    }
+
+    .gallery-grid button {
+        height: 280px
+    }
+}

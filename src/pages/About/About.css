@@ -1,0 +1,1639 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
+
+
+/* =========================================================
+   ABOUT PAGE
+========================================================= */
+
+.about-page {
+    --green: #063b24;
+    --gold: #d9a400;
+    --burgundy: #8b1e2d;
+    --cream: #fffdf7;
+    --muted: #59665f;
+    --line: rgba(6, 59, 36, 0.12);
+
+    padding-top: 20px;
+
+    background: var(--cream);
+
+    color: var(--green);
+
+    width: 100%;
+    max-width: 100%;
+
+    min-height: 100vh;
+
+    overflow-x: hidden;
+}
+
+.about-page * {
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   COMMON
+========================================================= */
+
+.section-shell {
+    width: min(1200px, calc(100% - 40px));
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.eyebrow {
+    display: inline-block;
+
+    font: 700 12px Arial, sans-serif;
+
+    letter-spacing: 2px;
+
+    color: var(--gold);
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.about-hero {
+    width: min(1200px, calc(100% - 40px));
+
+    margin-left: auto;
+    margin-right: auto;
+
+    padding: 75px 0 70px;
+
+    display: grid;
+
+    grid-template-columns: 0.9fr 1.1fr;
+
+    gap: 20px;
+
+    align-items: center;
+}
+
+.about-copy {
+    min-width: 0;
+}
+
+.about-copy h1 {
+    margin: 15px 0 20px;
+
+    font:
+        400 clamp(50px, 5.5vw, 72px) / 1.02
+        "DM Serif Display",
+        Georgia,
+        serif;
+}
+
+.about-copy h1 span {
+    color: var(--burgundy);
+}
+
+.about-copy p {
+    max-width: 540px;
+
+    color: var(--muted);
+
+    font:
+        17px / 1.75
+        Arial,
+        sans-serif;
+}
+
+.motto-line {
+    color: var(--burgundy) !important;
+
+    font-weight: 700 !important;
+
+    font-style: italic;
+}
+
+
+/* =========================================================
+   HERO IMAGE
+========================================================= */
+
+.about-hero-image {
+    width: 100%;
+
+    height: 430px;
+    /* width: 700px; */
+
+    border-radius: 20px;
+
+    overflow: hidden;
+}
+
+.about-hero-image img {
+    width: 100%;
+
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+}
+
+
+/* =========================================================
+   VISION / MISSION / MOTTO
+========================================================= */
+
+.about-pillars {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 18px;
+
+    padding-bottom: 25px;
+}
+
+.about-pillars article {
+    position: relative;
+
+    min-width: 0;
+
+    padding: 30px;
+
+    border: 1px solid var(--line);
+
+    border-radius: 14px;
+
+    background: #fff;
+
+    display: flex;
+
+    gap: 18px;
+
+    overflow: hidden;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.about-pillars article:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 12px 30px rgba(6, 59, 36, 0.08);
+}
+
+
+/* =========================================================
+   VISION CARD
+========================================================= */
+
+.about-pillars .vision-card {
+    background: var(--green);
+
+    color: #fff;
+
+    border-color: var(--green);
+}
+
+.about-pillars .vision-card::before {
+    content: "";
+
+    position: absolute;
+
+    width: 190px;
+    height: 190px;
+
+    right: -80px;
+    top: -90px;
+
+    border-radius: 50%;
+
+    border: 1px solid rgba(217, 164, 0, 0.28);
+}
+
+.about-pillars .vision-card::after {
+    content: "";
+
+    position: absolute;
+
+    width: 90px;
+    height: 90px;
+
+    right: 35px;
+    bottom: -45px;
+
+    border-radius: 50%;
+
+    background: rgba(217, 164, 0, 0.08);
+}
+
+.about-pillars .vision-card span {
+    color: #f0c337;
+}
+
+.about-pillars .vision-card h2 {
+    position: relative;
+
+    z-index: 1;
+
+    color: #fff;
+}
+
+.about-pillars .vision-card p {
+    position: relative;
+
+    z-index: 1;
+
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.about-pillars .vision-card .pillar-icon {
+    position: relative;
+
+    z-index: 2;
+
+    background: rgba(217, 164, 0, 0.14);
+
+    color: #f0c337;
+}
+
+
+/* =========================================================
+   MISSION CARD
+========================================================= */
+
+.about-pillars .mission-card {
+    background:
+        linear-gradient(
+            145deg,
+            #f4e7b5 0%,
+            #fffdf7 100%
+        );
+
+    border-color: rgba(217, 164, 0, 0.28);
+}
+
+.about-pillars .mission-card::before {
+    content: "";
+
+    position: absolute;
+
+    width: 190px;
+    height: 190px;
+
+    right: -80px;
+    bottom: -95px;
+
+    border-radius: 50%;
+
+    border: 1px solid rgba(6, 59, 36, 0.08);
+}
+
+.about-pillars .mission-card::after {
+    content: "";
+
+    position: absolute;
+
+    width: 80px;
+    height: 80px;
+
+    right: 35px;
+    top: -40px;
+
+    border-radius: 50%;
+
+    background: rgba(217, 164, 0, 0.08);
+}
+
+.about-pillars .mission-card span {
+    color: var(--green);
+}
+
+.about-pillars .mission-card h2 {
+    position: relative;
+
+    z-index: 1;
+
+    color: var(--green);
+}
+
+.about-pillars .mission-card p {
+    position: relative;
+
+    z-index: 1;
+
+    color: var(--muted);
+}
+
+.about-pillars .mission-card .pillar-icon {
+    position: relative;
+
+    z-index: 2;
+
+    background: rgba(6, 59, 36, 0.08);
+
+    color: var(--green);
+}
+
+
+/* =========================================================
+   PILLAR ICON
+========================================================= */
+
+.pillar-icon {
+    width: 50px;
+
+    height: 50px;
+
+    flex: 0 0 50px;
+
+    border-radius: 50%;
+
+    display: grid;
+
+    place-items: center;
+
+    background: rgba(6, 59, 36, 0.06);
+
+    font-size: 22px;
+}
+
+.about-pillars span {
+    font:
+        700 11px
+        Arial,
+        sans-serif;
+
+    letter-spacing: 1px;
+}
+
+.about-pillars h2 {
+    margin: 9px 0;
+
+    font:
+        400 28px / 1.15
+        "DM Serif Display",
+        Georgia,
+        serif;
+}
+
+.about-pillars p {
+    margin: 0;
+
+    color: var(--muted);
+
+    font:
+        14px / 1.7
+        Arial,
+        sans-serif;
+}
+
+
+/* =========================================================
+   LIGHT PREMIUM MOTTO CARD
+========================================================= */
+
+.motto-card {
+    grid-column: 1 / -1 !important;
+
+    position: relative;
+
+    min-height: 1cqb;
+
+    padding: 10px 50px !important;
+
+    display: flex !important;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    overflow: hidden;
+
+    border: 1px solid rgba(217, 164, 0, 0.22) !important;
+
+    border-radius: 18px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #fffdf7 0%,
+            #f8f1d8 100%
+        ) !important;
+
+    box-shadow:
+        0 8px 25px rgba(6, 59, 36, 0.05);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+
+/* Decorative gold circle */
+
+.motto-card::before {
+    content: "";
+
+    position: absolute;
+
+    width: 210px;
+    height: 210px;
+
+    left: -105px;
+    top: -110px;
+
+    border-radius: 50%;
+
+    border: 1px solid rgba(217, 164, 0, 0.18);
+}
+
+
+/* Decorative green circle */
+
+.motto-card::after {
+    content: "";
+
+    position: absolute;
+
+    width: 170px;
+    height: 170px;
+
+    right: -80px;
+    bottom: -95px;
+
+    border-radius: 50%;
+
+    border: 1px solid rgba(6, 59, 36, 0.08);
+}
+
+
+/* Motto label */
+
+.motto-card > span {
+    position: relative;
+
+    z-index: 2;
+
+    margin-bottom: 10px;
+
+    color: var(--gold) !important;
+
+    font:
+        700 11px
+        Arial,
+        sans-serif !important;
+
+    letter-spacing: 2.5px;
+}
+
+
+/* Motto heading */
+
+.motto-card h2 {
+    position: relative;
+
+    z-index: 2;
+
+    margin: 0 !important;
+
+    max-width: 800px;
+
+    color: var(--green) !important;
+
+    font:
+        400 clamp(30px, 4vw, 44px) / 1.2
+        "DM Serif Display",
+        Georgia,
+        serif !important;
+}
+
+
+/* Gold underline */
+
+.motto-card h2::after {
+    content: "";
+
+    display: block;
+
+    width: 50px;
+
+    height: 2px;
+
+    margin: 17px auto 0;
+
+    background: var(--gold);
+}
+
+
+/* Motto hover */
+
+.motto-card:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 14px 30px rgba(6, 59, 36, 0.08);
+}
+
+
+/* =========================================================
+   VALUES
+========================================================= */
+
+.about-values {
+    padding: 65px 0;
+}
+
+.center-heading {
+    text-align: center;
+}
+
+.center-heading h2 {
+    margin: 10px 0 15px;
+
+    font:
+        400 42px
+        "DM Serif Display",
+        Georgia,
+        serif;
+}
+
+
+/* =========================================================
+   SIX VALUE GRID
+========================================================= */
+
+.values-grid {
+    display: grid;
+
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+
+    border: 1px solid var(--line);
+
+    border-radius: 12px;
+
+    background: #fff;
+
+    overflow: hidden;
+}
+
+.values-grid div {
+    min-width: 0;
+
+    padding: 25px 15px;
+
+    text-align: center;
+
+    transition:
+        background 0.25s ease,
+        transform 0.25s ease;
+}
+
+.values-grid div + div {
+    border-left: 1px solid var(--line);
+}
+
+.values-grid div:hover {
+    background: #fffdf7;
+
+    transform: translateY(-2px);
+}
+
+.values-grid b {
+    width: 42px;
+
+    height: 42px;
+
+    margin: 0 auto 10px;
+
+    display: grid;
+
+    place-items: center;
+
+    border-radius: 50%;
+
+    background: rgba(6, 59, 36, 0.06);
+
+    color: var(--green);
+
+    font-size: 20px;
+
+    transition:
+        background 0.25s ease,
+        color 0.25s ease;
+}
+
+.values-grid div:hover b {
+    background: var(--green);
+
+    color: #f0c337;
+}
+
+.values-grid strong {
+    display: block;
+
+    font:
+        700 12px
+        Arial,
+        sans-serif;
+
+    line-height: 1.3;
+}
+
+
+/* =========================================================
+   KEY ACTIVITIES
+========================================================= */
+
+.about-key {
+    padding: 20px 0 85px;
+}
+
+.key-grid {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 12px 18px;
+
+    margin-top: 30px;
+}
+
+.key-grid div {
+    min-width: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 17px;
+
+    border: 1px solid var(--line);
+
+    border-radius: 9px;
+
+    background: #fff;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.key-grid div:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 20px rgba(6, 59, 36, 0.06);
+}
+
+.key-grid b {
+    width: 38px;
+
+    height: 38px;
+
+    flex: 0 0 38px;
+
+    display: grid;
+
+    place-items: center;
+
+    border-radius: 50%;
+
+    background: var(--green);
+
+    color: #f0c337;
+
+    font:
+        700 10px
+        Arial,
+        sans-serif;
+}
+
+.key-grid span {
+    min-width: 0;
+
+    font:
+        700 13px
+        Arial,
+        sans-serif;
+
+    line-height: 1.4;
+}
+
+
+/* =========================================================
+   CTA
+========================================================= */
+
+.about-cta {
+    padding: 60px 0;
+
+    background: var(--green);
+
+    color: #fff;
+
+    text-align: center;
+}
+
+.about-cta h2 {
+    margin: 0 0 8px;
+
+    font:
+        400 40px
+        "DM Serif Display",
+        Georgia,
+        serif;
+}
+
+.about-cta p {
+    margin: 0 0 20px;
+
+    color: rgba(255, 255, 255, 0.75);
+
+    font:
+        14px
+        Arial,
+        sans-serif;
+}
+
+
+/* =========================================================
+   BUTTON
+========================================================= */
+
+.btn {
+    min-height: 44px;
+
+    padding: 0 20px;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 5px;
+
+    text-decoration: none;
+
+    font:
+        700 12px
+        Arial,
+        sans-serif;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.btn-gold {
+    background: var(--gold);
+
+    color: #fff;
+}
+
+.btn-gold:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1000px) {
+
+    .about-hero {
+        gap: 35px;
+    }
+
+    .about-copy h1 {
+        font-size: clamp(44px, 6vw, 60px);
+    }
+
+    .about-copy p {
+        font-size: 15px;
+    }
+
+    .about-hero-image {
+        height: 350px;
+    }
+
+    .about-pillars article {
+        padding: 24px;
+    }
+
+    .about-pillars h2 {
+        font-size: 24px;
+    }
+
+    .values-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .values-grid div {
+        padding: 22px 12px;
+    }
+
+    .values-grid div:nth-child(4) {
+        border-left: 0;
+
+        border-top: 1px solid var(--line);
+    }
+
+    .values-grid div:nth-child(5),
+    .values-grid div:nth-child(6) {
+        border-top: 1px solid var(--line);
+    }
+
+    .values-grid div:nth-child(5) {
+        border-left: 1px solid var(--line);
+    }
+
+    .values-grid strong {
+        font-size: 11px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE / TABLET
+========================================================= */
+
+@media (max-width: 800px) {
+
+    .about-page {
+        padding-top: 10px;
+
+        width: 100%;
+
+        max-width: 100%;
+
+        overflow-x: hidden;
+    }
+
+
+    /* =====================================================
+       HERO
+    ===================================================== */
+
+    .about-hero {
+        width: calc(100% - 40px);
+
+        margin-left: auto;
+
+        margin-right: auto;
+
+        padding: 55px 0 45px;
+
+        display: flex;
+
+        flex-direction: column;
+
+        gap: 30px;
+    }
+
+    .about-copy {
+        width: 100%;
+
+        max-width: 100%;
+    }
+
+    .about-copy h1 {
+        margin: 14px 0 18px;
+
+        font-size: clamp(42px, 9vw, 58px);
+
+        line-height: 1.05;
+    }
+
+    .about-copy p {
+        max-width: 100%;
+
+        font-size: 16px;
+
+        line-height: 1.7;
+    }
+
+    .about-hero-image {
+        width: 100%;
+
+        height: 330px;
+
+        border-radius: 18px;
+    }
+
+    .about-hero-image img {
+        width: 100%;
+
+        height: 100%;
+
+        display: block;
+
+        object-fit: cover;
+    }
+
+
+    /* =====================================================
+       VISION / MISSION / MOTTO
+    ===================================================== */
+
+    .about-pillars {
+        width: calc(100% - 40px);
+
+        margin-left: auto;
+
+        margin-right: auto;
+
+        display: flex;
+
+        flex-direction: column;
+
+        gap: 16px;
+
+        padding-bottom: 30px;
+    }
+
+    .about-pillars article {
+        width: 100%;
+
+        min-width: 0;
+
+        margin: 0;
+
+        padding: 24px 22px;
+
+        display: flex;
+
+        align-items: flex-start;
+
+        gap: 16px;
+
+        border-radius: 14px;
+    }
+
+    .pillar-icon {
+        width: 48px;
+
+        height: 48px;
+
+        flex: 0 0 48px;
+    }
+
+    .about-pillars h2 {
+        margin: 8px 0;
+
+        font-size: 24px;
+
+        line-height: 1.25;
+    }
+
+    .about-pillars p {
+        font-size: 14px;
+
+        line-height: 1.65;
+    }
+
+
+    /* =====================================================
+       MOTTO
+    ===================================================== */
+
+    .motto-card {
+        width: 100%;
+
+        min-height: 175px;
+
+        padding: 35px 22px !important;
+
+        display: flex !important;
+
+        align-items: center;
+
+        justify-content: center;
+
+        text-align: center;
+    }
+
+    .motto-card > span {
+        font-size: 10px !important;
+
+        letter-spacing: 2px;
+    }
+
+    .motto-card h2 {
+        margin: 0 !important;
+
+        font-size: 32px !important;
+
+        line-height: 1.2;
+    }
+
+    .motto-card h2::after {
+        margin-top: 15px;
+    }
+
+
+    /* =====================================================
+       VALUES
+    ===================================================== */
+
+    .about-values {
+        width: calc(100% - 40px);
+
+        margin-left: auto;
+
+        margin-right: auto;
+
+        padding: 50px 0;
+    }
+
+    .center-heading h2 {
+        font-size: 38px;
+
+        line-height: 1.15;
+    }
+
+    .values-grid {
+        width: 100%;
+
+        display: grid;
+
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+
+        border-radius: 12px;
+
+        overflow: hidden;
+    }
+
+    .values-grid div {
+        min-width: 0;
+
+        padding: 22px 12px;
+
+        border-left: 0;
+    }
+
+    .values-grid div:nth-child(n + 3) {
+        border-top: 1px solid var(--line);
+    }
+
+    .values-grid div:nth-child(even) {
+        border-left: 1px solid var(--line);
+    }
+
+    .values-grid div:nth-child(-n + 2) {
+        border-top: 0;
+    }
+
+    .values-grid b {
+        width: 40px;
+
+        height: 40px;
+
+        font-size: 18px;
+    }
+
+    .values-grid strong {
+        font-size: 12px;
+
+        line-height: 1.3;
+    }
+
+
+    /* =====================================================
+       KEY ACTIVITIES
+    ===================================================== */
+
+    .about-key {
+        width: calc(100% - 40px);
+
+        margin-left: auto;
+
+        margin-right: auto;
+
+        padding: 20px 0 65px;
+    }
+
+    .key-grid {
+        width: 100%;
+
+        display: flex !important;
+
+        flex-direction: column !important;
+
+        gap: 12px;
+
+        margin-top: 25px;
+
+        padding: 0;
+    }
+
+    .key-grid > div {
+        width: 100% !important;
+
+        max-width: 100% !important;
+
+        min-width: 0 !important;
+
+        margin: 0 !important;
+
+        padding: 17px !important;
+
+        display: flex;
+
+        align-items: center;
+
+        gap: 15px;
+
+        box-sizing: border-box;
+
+        transform: none !important;
+    }
+
+    .key-grid > div:nth-child(odd),
+    .key-grid > div:nth-child(even) {
+        margin-left: 0 !important;
+
+        margin-right: 0 !important;
+
+        transform: none !important;
+    }
+
+    .key-grid b {
+        width: 38px;
+
+        height: 38px;
+
+        flex: 0 0 38px;
+    }
+
+    .key-grid span {
+        min-width: 0;
+
+        font-size: 14px;
+
+        line-height: 1.35;
+    }
+
+
+    /* =====================================================
+       CTA
+    ===================================================== */
+
+    .about-cta {
+        width: 100%;
+
+        padding: 55px 20px;
+    }
+
+    .about-cta .section-shell {
+        width: 100%;
+
+        margin: 0;
+
+        text-align: center;
+    }
+
+    .about-cta h2 {
+        font-size: 34px;
+
+        line-height: 1.2;
+    }
+
+    .about-cta p {
+        font-size: 14px;
+
+        line-height: 1.6;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 520px) {
+
+    .about-hero {
+        width: calc(100% - 30px);
+
+        padding: 45px 0 35px;
+
+        gap: 25px;
+    }
+
+    .about-copy h1 {
+        font-size: 42px;
+    }
+
+    .about-copy p {
+        font-size: 15px;
+
+        line-height: 1.65;
+    }
+
+    .about-hero-image {
+        height: 260px;
+
+        border-radius: 15px;
+    }
+
+
+    /* =====================================================
+       VISION / MISSION
+    ===================================================== */
+
+    .about-pillars {
+        width: calc(100% - 30px);
+
+        gap: 14px;
+    }
+
+    .about-pillars article {
+        padding: 20px 17px;
+
+        gap: 13px;
+    }
+
+    .pillar-icon {
+        width: 44px;
+
+        height: 44px;
+
+        flex-basis: 44px;
+
+        font-size: 19px;
+    }
+
+    .about-pillars h2 {
+        font-size: 21px;
+    }
+
+    .about-pillars p {
+        font-size: 13px;
+
+        line-height: 1.6;
+    }
+
+
+    /* =====================================================
+       MOTTO
+    ===================================================== */
+
+    .motto-card {
+        min-height: 155px;
+
+        padding: 28px 18px !important;
+
+        border-radius: 15px;
+    }
+
+    .motto-card::before {
+        width: 180px;
+
+        height: 180px;
+
+        left: -90px;
+
+        top: -90px;
+    }
+
+    .motto-card::after {
+        width: 150px;
+
+        height: 150px;
+
+        right: -70px;
+
+        bottom: -80px;
+    }
+
+    .motto-card h2 {
+        font-size: 28px !important;
+
+        line-height: 1.2;
+    }
+
+    .motto-card h2::after {
+        width: 42px;
+
+        margin-top: 13px;
+    }
+
+
+    /* =====================================================
+       VALUES
+    ===================================================== */
+
+    .about-values {
+        width: calc(100% - 30px);
+
+        padding: 45px 0;
+    }
+
+    .center-heading h2 {
+        font-size: 34px;
+    }
+
+    .values-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .values-grid div {
+        padding: 19px 10px;
+    }
+
+    .values-grid b {
+        width: 38px;
+
+        height: 38px;
+
+        font-size: 17px;
+    }
+
+    .values-grid strong {
+        font-size: 11px;
+
+        line-height: 1.3;
+    }
+
+
+    /* =====================================================
+       KEY ACTIVITIES
+    ===================================================== */
+
+    .about-key {
+        width: calc(100% - 30px);
+
+        padding-bottom: 55px;
+    }
+
+    .key-grid {
+        gap: 10px;
+    }
+
+    .key-grid > div {
+        padding: 16px 14px !important;
+    }
+
+    .key-grid b {
+        width: 36px;
+
+        height: 36px;
+
+        flex-basis: 36px;
+    }
+
+    .key-grid span {
+        font-size: 13px;
+
+        line-height: 1.35;
+    }
+
+
+    /* =====================================================
+       CTA
+    ===================================================== */
+
+    .about-cta {
+        padding: 45px 15px;
+    }
+
+    .about-cta h2 {
+        font-size: 29px;
+    }
+
+    .about-cta p {
+        font-size: 13px;
+    }
+}
+
+
+/* =========================================================
+   VERY SMALL PHONES
+========================================================= */
+
+@media (max-width: 380px) {
+
+    .about-hero {
+        width: calc(100% - 24px);
+
+        padding-top: 20px;
+    }
+
+    .about-copy h1 {
+        font-size: 36px;
+    }
+
+    .about-copy p {
+        font-size: 14px;
+    }
+
+    .about-hero-image {
+        height: 230px;
+    }
+
+    .about-pillars {
+        width: calc(100% - 24px);
+    }
+
+    .about-pillars article {
+        padding: 18px 14px;
+    }
+
+    .pillar-icon {
+        width: 40px;
+
+        height: 40px;
+
+        flex-basis: 40px;
+    }
+
+    .about-pillars h2 {
+        font-size: 19px;
+    }
+
+    .about-pillars p {
+        font-size: 12px;
+    }
+
+
+    /* =====================================================
+       SMALL MOTTO
+    ===================================================== */
+
+    .motto-card {
+        min-height: 145px;
+
+        padding: 25px 14px !important;
+    }
+
+    .motto-card h2 {
+        font-size: 25px !important;
+    }
+
+
+    /* =====================================================
+       VALUES
+    ===================================================== */
+
+    .about-values {
+        width: calc(100% - 24px);
+    }
+
+    .values-grid div {
+        padding: 17px 8px;
+    }
+
+    .values-grid b {
+        width: 34px;
+
+        height: 34px;
+
+        font-size: 15px;
+    }
+
+    .values-grid strong {
+        font-size: 10px;
+    }
+
+
+    /* =====================================================
+       KEY ACTIVITIES
+    ===================================================== */
+
+    .about-key {
+        width: calc(100% - 24px);
+    }
+
+    .key-grid > div {
+        padding: 14px 12px !important;
+    }
+
+    .key-grid b {
+        width: 34px;
+
+        height: 34px;
+
+        flex-basis: 34px;
+    }
+
+    .key-grid span {
+        font-size: 12px;
+    }
+
+
+    /* =====================================================
+       CTA
+    ===================================================== */
+
+    .about-cta {
+        padding: 40px 12px;
+    }
+
+    .about-cta h2 {
+        font-size: 26px;
+    }
+}
+
+
+/* =========================================================
+   SCROLL REVEAL COMPATIBILITY
+========================================================= */
+
+.about-page [data-reveal] {
+    max-width: 100%;
+}
+
+@media (max-width: 800px) {
+
+    .about-page .scroll-reveal-left,
+    .about-page .scroll-reveal-right {
+        max-width: 100%;
+    }
+}
+
+
+/* =========================================================
+   FINAL MOBILE WIDTH FIX
+========================================================= */
+
+@media screen and (max-width: 800px) {
+
+    .about-page .about-hero,
+    .about-page .about-pillars,
+    .about-page .about-values,
+    .about-page .about-key,
+    .about-page .about-cta {
+        width: 100% !important;
+
+        max-width: 100% !important;
+
+        margin-left: 0 !important;
+
+        margin-right: 0 !important;
+    }
+
+    .about-page .about-hero {
+        display: flex !important;
+
+        flex-direction: column !important;
+
+        padding: 60px 20px 40px !important;
+    }
+
+    .about-page .about-pillars {
+        display: flex !important;
+
+        flex-direction: column !important;
+
+        padding: 40px 20px !important;
+    }
+
+    .about-page .about-pillars article {
+        width: 100% !important;
+
+        max-width: 100% !important;
+
+        margin: 0 !important;
+    }
+
+    .about-page .about-values {
+        padding: 40px 20px !important;
+    }
+
+    .about-page .about-key {
+        padding: 40px 20px !important;
+    }
+
+    .about-page .about-cta {
+        padding: 50px 20px !important;
+    }
+
+
+    /* Final Motto */
+
+    .about-page .motto-card {
+        width: 100% !important;
+
+        min-height: 170px;
+
+        padding: 32px 20px !important;
+    }
+
+    .about-page .motto-card h2 {
+        font-size: 32px !important;
+    }
+}

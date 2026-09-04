@@ -1,0 +1,679 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
+
+
+/* =========================================
+   PAGE
+========================================= */
+
+.activity-details-page {
+    --green: #063b24;
+    --gold: #d9a400;
+    --burgundy: #8b1e2d;
+    --cream: #fffdf7;
+    --muted: #657068;
+
+    padding-top: 50px;
+
+    background: var(--cream);
+
+    color: var(--green);
+
+    min-height: 100vh;
+}
+
+.activity-details-page * {
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   COMMON CONTAINER
+========================================= */
+
+.activity-detail-hero-inner,
+.activity-detail-content {
+    width: min(1200px, calc(100% - 40px));
+
+    margin: auto;
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.activity-detail-hero {
+    padding: 55px 0 55px;
+}
+
+.activity-detail-hero-inner {
+    display: grid;
+
+    grid-template-columns: .85fr 1.15fr;
+
+    gap: 55px;
+
+    align-items: center;
+}
+
+
+/* =========================================
+   HERO CONTENT
+========================================= */
+
+.activity-detail-heading {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+}
+
+
+/* =========================================
+   BACK LINK
+========================================= */
+
+.back-to-activities {
+    margin-bottom: 22px;
+
+    color: var(--muted);
+
+    text-decoration: none;
+
+    font: 600 11px Arial, sans-serif;
+
+    transition: color .2s ease;
+}
+
+.back-to-activities:hover {
+    color: var(--gold);
+}
+
+
+/* =========================================
+   EYEBROW
+========================================= */
+
+.activity-detail-heading .eyebrow {
+    font: 700 12px Arial, sans-serif;
+
+    letter-spacing: 2px;
+
+    color: var(--gold);
+}
+
+
+/* =========================================
+   HERO TITLE
+========================================= */
+
+.activity-detail-heading h1 {
+    margin: 14px 0 18px;
+
+    max-width: 560px;
+
+    color: var(--green);
+
+    font:
+        400 clamp(50px, 5vw, 68px) / 1.03
+        "DM Serif Display",
+        Georgia,
+        serif;
+}
+
+
+/* =========================================
+   HERO DESCRIPTION
+========================================= */
+
+.activity-detail-heading p {
+    max-width: 500px;
+
+    margin: 0;
+
+    color: var(--muted);
+
+    font: 16px/1.75 Arial, sans-serif;
+}
+
+
+/* =========================================
+   HERO IMAGE
+========================================= */
+
+.activity-detail-image {
+    width: 100%;
+
+    overflow: hidden;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 8px 25px rgba(6, 59, 36, .06);
+}
+
+.activity-detail-image img {
+    width: 100%;
+
+    height: 380px;
+
+    display: block;
+
+    margin-top: 10px;
+
+    object-fit: cover;
+
+    border-radius: 18px;
+
+    transition: transform .4s ease;
+}
+
+.activity-detail-image:hover img {
+    transform: scale(1.02);
+}
+
+
+/* =========================================
+   MAIN CONTENT
+========================================= */
+
+.activity-detail-content {
+    padding: 20px 0 90px;
+}
+
+.activity-detail-main {
+    width: 100%;
+
+    max-width: 1200px;
+
+    margin: 0;
+}
+
+
+/* =========================================
+   SECTION LABEL
+========================================= */
+
+.detail-label {
+    display: block;
+
+    margin-bottom: 10px;
+
+    color: var(--gold);
+
+    font: 700 11px Arial, sans-serif;
+
+    letter-spacing: 2px;
+}
+
+
+/* =========================================
+   SECTION HEADINGS
+========================================= */
+
+.activity-detail-main h2 {
+    margin: 0 0 18px;
+
+    color: var(--green);
+
+    font: 700 28px/1.25 Arial, sans-serif;
+}
+
+
+/* =========================================
+   DESCRIPTION
+========================================= */
+
+.detail-description {
+    max-width: 900px;
+
+    margin: 0;
+
+    color: var(--muted);
+
+    font: 15px/1.8 Arial, sans-serif;
+}
+
+
+/* =========================================
+   OUR FOCUS
+========================================= */
+
+.detail-objectives {
+    width: 100%;
+
+    margin-top: 55px;
+
+    max-width: 1200px;
+}
+
+.objective-list {
+    display: grid;
+
+    width: 100%;
+
+    margin-top: 25px;
+
+    border-top: 1px solid rgba(6, 59, 36, .1);
+}
+
+.objective-item {
+    display: grid;
+
+    grid-template-columns: 55px 1fr;
+
+    align-items: center;
+
+    gap: 20px;
+
+    padding: 17px 0;
+
+    border-bottom: 1px solid rgba(6, 59, 36, .1);
+}
+
+.objective-number {
+    color: var(--gold);
+
+    font: 700 12px Arial, sans-serif;
+}
+
+.objective-item p {
+    margin: 0;
+
+    color: var(--muted);
+
+    font: 13px/1.6 Arial, sans-serif;
+}
+
+
+/* =========================================
+   OUR IMPACT
+========================================= */
+
+.detail-impact {
+    width: 100%;
+
+    max-width: 1200px;
+
+    margin-top: 55px;
+
+    padding: 0;
+}
+
+.detail-impact .detail-label {
+    margin-bottom: 10px;
+}
+
+.detail-impact h2 {
+    margin: 0 0 14px;
+
+    color: var(--green);
+
+    font: 700 28px/1.25 Arial, sans-serif;
+}
+
+.detail-impact p {
+    max-width: 900px;
+
+    margin: 0;
+
+    color: var(--muted);
+
+    font: 14px/1.8 Arial, sans-serif;
+}
+
+
+/* =========================================
+   GET INVOLVED
+   FULL WIDTH
+========================================= */
+
+.activity-detail-cta {
+    width: 100%;
+
+    max-width: 1200px;
+
+    margin-top: 55px;
+
+    padding: 38px 45px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 35px;
+
+    border-radius: 12px;
+
+    background: var(--green);
+
+    color: #fff;
+}
+
+
+/* =========================================
+   CTA CONTENT
+========================================= */
+
+.activity-detail-cta .detail-label {
+    margin-bottom: 8px;
+
+    color: var(--gold);
+}
+
+.activity-detail-cta h2 {
+    margin: 0 0 10px;
+
+    color: #fff;
+
+    font: 700 28px/1.25 Arial, sans-serif;
+}
+
+.activity-detail-cta p {
+    max-width: 560px;
+
+    margin: 0;
+
+    color: rgba(255, 255, 255, .78);
+
+    font: 13px/1.7 Arial, sans-serif;
+}
+
+
+/* =========================================
+   SUPPORT BUTTON
+========================================= */
+
+.detail-support-btn {
+    flex-shrink: 0;
+
+    padding: 13px 20px;
+
+    border: 1px solid rgba(255, 255, 255, .2);
+
+    border-radius: 5px;
+
+    background: var(--gold);
+
+    color: #fff;
+
+    text-decoration: none;
+
+    white-space: nowrap;
+
+    font: 700 11px Arial, sans-serif;
+
+    transition:
+        background .2s ease,
+        transform .2s ease,
+        box-shadow .2s ease;
+}
+
+.detail-support-btn:hover {
+    background: #c49300;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 6px 15px rgba(0, 0, 0, .15);
+}
+
+
+/* =========================================
+   NOT FOUND
+========================================= */
+
+.activity-not-found {
+    width: min(1200px, calc(100% - 40px));
+
+    min-height: 60vh;
+
+    margin: auto;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    justify-content: center;
+}
+
+.activity-not-found .eyebrow {
+    font: 700 12px Arial;
+
+    letter-spacing: 2px;
+
+    color: var(--gold);
+}
+
+.activity-not-found h1 {
+    margin: 14px 0;
+
+    color: var(--green);
+
+    font:
+        400 50px / 1.03
+        "DM Serif Display",
+        Georgia,
+        serif;
+}
+
+.activity-not-found p {
+    color: var(--muted);
+
+    font: 15px/1.7 Arial;
+}
+
+.activity-not-found a {
+    margin-top: 15px;
+
+    color: var(--green);
+
+    font: 700 11px Arial;
+
+    text-decoration: none;
+}
+
+.activity-not-found a:hover {
+    color: var(--gold);
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 850px) {
+
+    .activity-details-page {
+        padding-top: 20px;
+    }
+
+    .activity-detail-hero {
+        padding: 45px 0 35px;
+    }
+
+    .activity-detail-hero-inner {
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+    }
+
+    .activity-detail-heading h1 {
+        font-size: 52px;
+    }
+
+    .activity-detail-heading p {
+        max-width: 600px;
+    }
+
+    .activity-detail-image img {
+        height: 330px;
+    }
+
+    .activity-detail-main,
+    .detail-description,
+    .detail-objectives,
+    .detail-impact,
+    .activity-detail-cta {
+        max-width: 100%;
+    }
+
+    .activity-detail-cta {
+        align-items: flex-start;
+    }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 520px) {
+
+    .activity-detail-hero-inner,
+    .activity-detail-content {
+        width: calc(100% - 30px);
+    }
+
+    .activity-detail-hero {
+        padding: 55px 0 30px;
+    }
+
+    .back-to-activities {
+        margin-bottom: -20px;
+    }
+
+    .activity-detail-heading h1 {
+        margin: 12px 0 15px;
+
+        font-size: 46px;
+    }
+
+    .activity-detail-heading p {
+        font-size: 14px;
+
+        line-height: 1.7;
+    }
+
+    .activity-detail-image img {
+        height: 230px;
+
+        border-radius: 14px;
+    }
+
+    .activity-detail-content {
+        padding: 15px 0 70px;
+    }
+
+    .activity-detail-main h2,
+    .detail-impact h2 {
+        font-size: 23px;
+    }
+
+    .detail-description {
+        font-size: 14px;
+
+        line-height: 1.75;
+    }
+
+
+    /* =====================================
+       OUR FOCUS
+    ===================================== */
+
+    .detail-objectives {
+        margin-top: 45px;
+    }
+
+    .objective-item {
+        grid-template-columns: 40px 1fr;
+
+        gap: 12px;
+
+        padding: 15px 0;
+    }
+
+    .objective-item p {
+        font-size: 12px;
+    }
+
+
+    /* =====================================
+       OUR IMPACT
+    ===================================== */
+
+    .detail-impact {
+        margin-top: 45px;
+    }
+
+    .detail-impact p {
+        font-size: 13px;
+
+        line-height: 1.75;
+    }
+
+
+    /* =====================================
+       GET INVOLVED
+    ===================================== */
+
+    .activity-detail-cta {
+        width: 100%;
+
+        margin-top: 45px;
+
+        padding: 25px 20px;
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 20px;
+
+        border-radius: 12px;
+    }
+
+    .activity-detail-cta h2 {
+        font-size: 23px;
+    }
+
+    .activity-detail-cta p {
+        font-size: 12px;
+    }
+
+    .detail-support-btn {
+        width: 100%;
+
+        text-align: center;
+    }
+}
+
+
+/* =========================================
+   SMALL PHONES
+========================================= */
+
+@media (max-width: 400px) {
+
+    .activity-detail-heading h1 {
+        font-size: 42px;
+    }
+
+    .activity-detail-image img {
+        height: 210px;
+    }
+
+    .activity-detail-main h2,
+    .detail-impact h2 {
+        font-size: 21px;
+    }
+
+    .objective-item p {
+        font-size: 11px;
+    }
+}

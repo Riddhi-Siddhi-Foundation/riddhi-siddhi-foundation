@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
+
+.support-page {
+    --green: #063b24;
+    --gold: #d9a400;
+    --burgundy: #8b1e2d;
+    --cream: #fffdf7;
+    --muted: #657068;
+    padding-top: 20px;
+    background: var(--cream);
+    color: var(--green);
+    min-height: 100vh
+}
+
+.support-page * {
+    box-sizing: border-box
+}
+
+.section-shell {
+    width: min(1200px, calc(100% - 40px));
+    margin: auto
+}
+
+.eyebrow {
+    font: 700 12px Arial;
+    letter-spacing: 2px;
+    margin-top: 30px;
+    color: var(--gold)
+}
+
+.support-hero {
+    padding: 70px 0;
+    background: var(--green);
+    color: #fff
+}
+
+.support-hero-inner {
+    display: grid;
+    grid-template-columns: .85fr 1.15fr;
+    gap: 55px;
+    align-items: center
+}
+
+.support-hero h1 {
+    margin: 14px 0 18px;
+    font: 400 clamp(50px, 5.2vw, 70px)/1.02 "DM Serif Display", Georgia, serif
+}
+
+.support-hero h1 span {
+    color: #f0c337
+}
+
+.support-hero p {
+    max-width: 510px;
+    color: rgba(255, 255, 255, .75);
+    font: 16px/1.75 Arial
+}
+
+.support-hero img {
+    width: 100%;
+    height: 350px;
+    margin-top: 30px;
+    object-fit: cover;
+    border-radius: 18px
+}
+
+.support-ways {
+    padding: 60px 0
+}
+
+.center-heading {
+    text-align: center
+}
+
+.center-heading h2 {
+    margin: 10px 0 12px;
+    font: 400 42px "DM Serif Display", Georgia, serif
+}
+
+.center-heading p {
+    color: var(--muted);
+    font: 14px Arial
+}
+
+.ways-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+    margin-top: 35px
+}
+
+.ways-grid article {
+    padding: 28px 20px;
+    text-align: center;
+    border: 1px solid rgba(6, 59, 36, .1);
+    border-radius: 12px;
+    background: #fff
+}
+
+.ways-grid article>b {
+    width: 52px;
+    height: 52px;
+    margin: auto;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    background: #f5f0df;
+    color: var(--green);
+    font-size: 24px
+}
+
+.ways-grid h3 {
+    margin: 15px 0 8px;
+    font: 700 17px Arial
+}
+
+.ways-grid p {
+    min-height: 80px;
+    margin: 0 0 18px;
+    color: var(--muted);
+    font: 12px/1.65 Arial
+}
+
+.ways-grid a,
+.btn {
+    display: inline-flex;
+    min-height: 38px;
+    padding: 0 15px;
+    align-items: center;
+    border-radius: 5px;
+    background: var(--green);
+    color: #fff;
+    text-decoration: none;
+    font: 700 10px Arial
+}
+
+.support-impact {
+    padding: 70px 0;
+    background: #f5f0df
+}
+
+.impact-points {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin-top: 35px;
+    border: 1px solid rgba(6, 59, 36, .1);
+    border-radius: 12px;
+    background: #fff
+}
+
+.impact-points div {
+    padding: 28px 15px;
+    text-align: center
+}
+
+.impact-points div+div {
+    border-left: 1px solid rgba(6, 59, 36, .1)
+}
+
+.impact-points b {
+    display: block;
+    color: var(--gold);
+    font: 700 11px Arial
+}
+
+.impact-points span {
+    display: block;
+    margin-top: 8px;
+    font: 700 12px Arial
+}
+
+.donation-note {
+    padding: 75px 0;
+    text-align: center
+}
+
+.donation-note>div {
+    max-width: 800px;
+    margin: auto;
+    padding: 40px;
+    border: 1px solid rgba(6, 59, 36, .1);
+    border-radius: 14px;
+    background: #fff
+}
+
+.donation-note h2 {
+    margin: 0 0 10px;
+    font: 400 36px "DM Serif Display", Georgia, serif
+}
+
+.donation-note p {
+    margin: 0 auto 20px;
+    max-width: 650px;
+    color: var(--muted);
+    font: 14px/1.7 Arial
+}
+
+@media(max-width:850px) {
+    .support-page {
+        padding-top: 20px
+    }
+
+    .support-hero-inner {
+        grid-template-columns: 1fr
+    }
+
+    .ways-grid {
+        grid-template-columns: 1fr 1fr
+    }
+
+    .impact-points {
+        grid-template-columns: 1fr 1fr
+    }
+
+    .impact-points div:nth-child(3) {
+        border-left: 0;
+        border-top: 1px solid rgba(6, 59, 36, .1)
+    }
+
+    .impact-points div:nth-child(n+4) {
+        border-top: 1px solid rgba(6, 59, 36, .1)
+    }
+}
+
+@media(max-width:520px) {
+    .section-shell {
+        width: calc(100% - 30px)
+    }
+
+    .support-hero h1 {
+        font-size: 46px
+    }
+
+    .ways-grid {
+        grid-template-columns: 1fr
+    }
+
+    .impact-points {
+        grid-template-columns: 1fr
+    }
+
+    .impact-points div+div {
+        border-left: 0;
+        border-top: 1px solid rgba(6, 59, 36, .1)
+    }
+}

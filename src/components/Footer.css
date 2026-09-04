@@ -1,0 +1,664 @@
+.site-footer {
+    --green: #063b24;
+    --gold: #d9a400;
+    --cream: #fffdf7;
+    --muted: #657068;
+
+    width: 100%;
+
+    background: #fff;
+
+    color: var(--green);
+
+    border-top: 1px solid rgba(6, 59, 36, 0.1);
+}
+
+
+/* =========================================
+   FOOTER MAIN
+========================================= */
+
+.footer-inner {
+    width: min(1200px, calc(100% - 40px));
+
+    margin: auto;
+
+    padding: 48px 0 42px;
+
+    display: grid;
+
+    grid-template-columns:
+        1.35fr
+        0.8fr
+        1.15fr
+        1.3fr
+        0.6fr;
+
+    gap: 32px;
+}
+
+
+/* =========================================
+   BRAND
+========================================= */
+
+.footer-brand {
+    min-width: 0;
+}
+
+.footer-brand img {
+    width: 190px;
+
+    height: auto;
+
+    display: block;
+}
+
+.footer-brand p {
+    margin: 0px 40px 20px;
+
+    color: var(--muted);
+
+    font: 13px/1.6 Arial, sans-serif;
+}
+
+
+/* =========================================
+   FOOTER COLUMNS
+========================================= */
+
+.footer-col {
+    min-width: 0;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 8px;
+}
+
+.footer-col h3 {
+    margin: 0 0 8px;
+
+    color: var(--green);
+
+    font: 700 14px Arial, sans-serif;
+}
+
+.footer-col a,
+.footer-col span {
+    color: var(--muted);
+
+    font: 12px/1.55 Arial, sans-serif;
+
+    text-decoration: none;
+}
+
+.footer-col a {
+    transition: color 0.2s ease;
+}
+
+.footer-col a:hover {
+    color: var(--gold);
+}
+
+
+/* =========================================
+   SOCIAL ICONS
+========================================= */
+
+.socials {
+    display: flex;
+
+    align-items: center;
+
+    gap: 9px;
+}
+
+.socials a {
+    width: 32px;
+    height: 32px;
+
+    display: grid;
+
+    place-items: center;
+
+    border-radius: 50%;
+
+    background: var(--green);
+
+    color: #fff;
+
+    font: 700 13px Arial, sans-serif;
+
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease;
+}
+
+.socials a:hover {
+    background: var(--gold);
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================
+   FOOTER BOTTOM
+========================================= */
+
+.footer-bottom {
+    position: relative;
+
+    min-height: 54px;
+
+    padding: 10px max(20px, calc((100% - 1200px) / 2));
+
+    border-top: 1px solid rgba(6, 59, 36, 0.09);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: #727a75;
+
+    font: 10px/1.5 Arial, sans-serif;
+}
+
+
+/* =========================================
+   FOOTER BOTTOM - 3 COLUMN LAYOUT
+========================================= */
+
+.footer-bottom-content {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1fr;
+
+    align-items: center;
+
+    column-gap: 20px;
+
+    text-align: center;
+}
+
+
+/* =========================================
+   LEFT - COPYRIGHT
+========================================= */
+
+.footer-copyright {
+    justify-self: start;
+
+    color: #727a75;
+
+    font: 11px/1.5 Arial, sans-serif;
+}
+
+
+/* =========================================
+   CENTER - CRAFTED BY
+========================================= */
+
+.footer-crafted {
+    justify-self: center;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 4px;
+
+    color: #727a75;
+
+    font: 10px/1.5 Arial, sans-serif;
+}
+
+
+/* =========================================
+   INAINAYAM
+========================================= */
+
+.developer-link {
+    display: inline-flex;
+
+    align-items: center;
+
+    text-decoration: none;
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    letter-spacing: 0.4px;
+
+    transition:
+        opacity 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+/* INAI - BLUE */
+
+.developer-inai {
+    color: #00349A;
+}
+
+
+/* NAYAM - GREEN */
+
+.developer-nayam {
+    color: #02BB99;
+}
+
+
+.developer-link:hover {
+    opacity: 0.8;
+
+    transform: translateY(-1px);
+}
+
+
+/* =========================================
+   RIGHT - FOUNDATION MESSAGE
+========================================= */
+
+.footer-message {
+    justify-self: end;
+
+    color: #727a75;
+
+    font: 500 11px/1.5 Arial, sans-serif;
+
+    text-align: right;
+}
+
+
+/* =========================================
+   BACK TO TOP
+========================================= */
+
+.back-to-top {
+    position: fixed;
+
+    right: 24px;
+    bottom: 24px;
+
+    z-index: 999;
+
+    width: 48px;
+    height: 48px;
+
+    padding: 0;
+
+    display: grid;
+
+    place-items: center;
+
+    border: 1px solid rgba(217, 164, 0, 0.45);
+
+    border-radius: 50%;
+
+    background: var(--gold);
+
+    color: #fff;
+
+    cursor: pointer;
+
+    font: 700 20px Arial, sans-serif;
+
+    box-shadow:
+        0 6px 18px rgba(6, 59, 36, 0.18);
+
+    transition:
+        transform 0.25s ease,
+        background 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.back-to-top:hover {
+    background: var(--green);
+
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 10px 22px rgba(6, 59, 36, 0.22);
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 950px) {
+
+    .footer-inner {
+        grid-template-columns:
+            1.2fr
+            0.9fr
+            1.1fr;
+
+        gap: 35px 28px;
+    }
+
+    .footer-brand {
+        grid-column: 1 / -1;
+    }
+
+    .footer-brand img {
+        width: 180px;
+    }
+
+    .footer-bottom-content {
+        column-gap: 12px;
+    }
+
+    .footer-copyright,
+    .footer-crafted,
+    .footer-message {
+        font-size: 9px;
+    }
+
+    .developer-link {
+        font-size: 10px;
+    }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 650px) {
+
+    .footer-inner {
+        width: calc(100% - 32px);
+
+        margin: 0 auto;
+
+        padding: 38px 0 32px;
+
+        display: grid;
+
+        grid-template-columns: 1fr 1fr;
+
+        gap: 32px 24px;
+
+        justify-items: center;
+
+        text-align: left;
+    }
+
+
+    /* =====================================
+       BRAND
+    ===================================== */
+
+    .footer-brand {
+        grid-column: 1 / -1;
+
+        width: 100%;
+
+        padding-bottom: 0px;
+
+        border-bottom: 1px solid rgba(6, 59, 36, 0.08);
+
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: left;
+
+        text-align: left;
+    }
+
+    .footer-brand img {
+        width: 170px;
+        margin-left:20px;
+
+    }
+
+    .footer-brand p {
+        font-size: 12px;
+
+        /* margin-top: 0px; */
+        margin-left: 48px;
+    }
+
+
+    /* =====================================
+       QUICK LINKS + ACTIVITIES
+    ===================================== */
+
+    .footer-col {
+        width: max-content;
+
+        min-width: 120px;
+
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        text-align: left;
+
+        gap: 8px;
+    }
+
+    .footer-col h3 {
+        font-size: 13px;
+
+        margin-bottom: 6px;
+
+        text-align: left;
+    }
+
+    .footer-col a,
+    .footer-col span {
+        font-size: 11px;
+
+        line-height: 1.6;
+
+        text-align: left;
+    }
+
+
+    /* =====================================
+       CONTACT INFO
+    ===================================== */
+
+    .footer-col:nth-child(4) {
+        grid-column: 1 / -1;
+
+        width: 100%;
+
+        padding-top: 12px;
+        margin-left: 60px;
+
+        border-top: 1px solid rgba(6, 59, 36, 0.08);
+
+        align-items: left;
+
+        text-align: left;
+    }
+
+    .footer-col:nth-child(4) h3,
+    .footer-col:nth-child(4) span {
+        text-align: left;
+    }
+
+
+    /* =====================================
+       FOLLOW US
+    ===================================== */
+
+    .footer-col:nth-child(5) {
+        grid-column: 1 / -1;
+
+        width: 100%;
+
+        padding-top: 20px;
+
+        border-top: 1px solid rgba(6, 59, 36, 0.08);
+
+        align-items: center;
+
+        text-align: center;
+    }
+
+    .footer-col:nth-child(5) h3 {
+        text-align: center;
+    }
+
+    .socials {
+        justify-content: center;
+    }
+
+    .socials a {
+        width: 40px;
+        height: 40px;
+    }
+
+
+    /* =====================================
+       FOOTER BOTTOM
+    ===================================== */
+
+    .footer-bottom {
+        min-height: auto;
+
+        padding: 14px 16px 18px;
+
+        display: flex;
+
+        align-items: center;
+
+        justify-content: center;
+
+        text-align: center;
+    }
+
+
+    /* =====================================
+       BOTTOM CONTENT
+    ===================================== */
+
+    .footer-bottom-content {
+        width: 100%;
+
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: center;
+
+        justify-content: center;
+
+        gap: 6px;
+
+        text-align: center;
+    }
+
+    .footer-copyright,
+    .footer-crafted,
+    .footer-message {
+        justify-self: auto;
+
+        text-align: center;
+
+        font-size: 12px;
+
+        line-height: 1.5;
+    }
+
+    .developer-link {
+        font-size: 14px;
+    }
+
+
+    /* =====================================
+       BACK TO TOP
+    ===================================== */
+
+    .back-to-top {
+        right: 16px;
+
+        bottom: 16px;
+
+        width: 46px;
+
+        height: 46px;
+
+        font-size: 18px;
+    }
+}
+
+
+/* =========================================
+   SMALL PHONES
+========================================= */
+
+@media (max-width: 400px) {
+
+    .footer-inner {
+        width: calc(100% - 28px);
+
+        gap: 28px 18px;
+    }
+
+    .footer-brand img {
+        width: 155px;
+    }
+
+    .footer-col {
+        min-width: 110px;
+    }
+
+    .footer-col h3 {
+        font-size: 12px;
+    }
+
+    .footer-col a,
+    .footer-col span {
+        font-size: 10px;
+    }
+
+
+    /* Bottom */
+
+    .footer-bottom {
+        padding-left: 12px;
+
+        padding-right: 12px;
+    }
+
+    .footer-bottom-content {
+        gap: 5px;
+    }
+
+    .footer-copyright,
+    .footer-crafted,
+    .footer-message {
+        font-size: 8.5px;
+    }
+
+
+    /* Back to top */
+
+    .back-to-top {
+        right: 16px;
+
+        bottom: 12px;
+
+        width: 46px;
+
+        height: 46px;
+    }
+}
