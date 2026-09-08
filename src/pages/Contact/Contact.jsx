@@ -1,10 +1,10 @@
 import React from "react";
 import "./Contact.css";
 
-import gangadhara from "../../assets/gangadhara.webp";
-import kavya from "../../assets/kavya.webp";
-import latha from "../../assets/latha.webp";
-import shashikumar from "../../assets/shashikumar.webp";
+import gangadhara from "../../assets/gangadhara.png";
+import kavya from "../../assets/kavya.png";
+import latha from "../../assets/latha.png";
+import shashikumar from "../../assets/shashikumar.png";
 
 function Contact() {
   const mapsUrl =
