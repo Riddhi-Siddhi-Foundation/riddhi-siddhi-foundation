@@ -13,12 +13,11 @@ function Contact() {
 
   // const mapEmbedUrl =
   //   "https://www.google.com/maps?q=1st+A+Cross,+Siddaganga+Extension,+Tumkuru,+Karnataka+572102&output=embed";
+const mapsUrl =
+  "https://maps.app.goo.gl/42A4xPatfg6EPvdx8?g_st=aw";
 
-  const mapsUrl =
-  "https://www.google.com/maps/search/?api=1&query=13.3340973,77.1131085";
-
-  const mapEmbedUrl =
-  "https://www.google.com/maps?q=13.3340973,77.1131085&z=17&output=embed";
+const mapEmbedUrl =
+  "https://www.google.com/maps?output=embed&q=13.3340973,77.1131085&z=17";
 
   return (
     <main className="contact-page">
