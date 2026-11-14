@@ -60,10 +60,17 @@ function Footer() {
         <div className="footer-col">
           <h3>Contact Info</h3>
 
-          <span>
+          {/* <span>
             1st A Cross, Siddaganga Extension,
             <br />
             Tumkuru – 572102, Karnataka
+          </span> */}
+          <span>
+            10th A Cross, S S PURAM,
+            <br />
+            Tumkuru – 572102,
+            <br />
+            Karnataka, India.
           </span>
 
           <span>☎ 9901628078</span>
