@@ -7,11 +7,16 @@ import latha from "../../assets/latha.png";
 import shashikumar from "../../assets/shashikumar.png";
 
 function Contact() {
+  // const mapsUrl =
+  //   "https://maps.app.goo.gl/wJbanACTQzKJ7j8F7";
   const mapsUrl =
-    "https://maps.app.goo.gl/wJbanACTQzKJ7j8F7";
+  "https://maps.app.goo.gl/42A4xPatfg6EPvdx8?g_st=aw";
+
+  // const mapEmbedUrl =
+  //   "https://www.google.com/maps?q=1st+A+Cross,+Siddaganga+Extension,+Tumkuru,+Karnataka+572102&output=embed";
 
   const mapEmbedUrl =
-    "https://www.google.com/maps?q=1st+A+Cross,+Siddaganga+Extension,+Tumkuru,+Karnataka+572102&output=embed";
+  "https://www.google.com/maps?q=10th+A+Cross,+S+S+Puram,+Tumkuru,+Karnataka+572102&output=embed";
 
   return (
     <main className="contact-page">
@@ -133,13 +138,22 @@ function Contact() {
             <div>
               <strong>Address</strong>
 
-              <span>
+              {/* <span>
                 1st A Cross, Siddaganga Extension,
                 <br />
                 Near Cosmo Skin Care, Tumkuru – 572102,
                 <br />
                 Karnataka, India.
+              </span> */}
+              
+              <span>
+              10th A Cross, S S PURAM,
+              <br />
+              Tumkuru – 572102,
+              <br />
+              Karnataka, India.
               </span>
+              
             </div>
           </div>
 
