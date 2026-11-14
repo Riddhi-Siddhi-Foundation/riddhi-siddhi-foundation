@@ -9,14 +9,16 @@ import shashikumar from "../../assets/shashikumar.png";
 function Contact() {
   // const mapsUrl =
   //   "https://maps.app.goo.gl/wJbanACTQzKJ7j8F7";
-  const mapsUrl =
-  "https://maps.app.goo.gl/42A4xPatfg6EPvdx8?g_st=aw";
+  
 
   // const mapEmbedUrl =
   //   "https://www.google.com/maps?q=1st+A+Cross,+Siddaganga+Extension,+Tumkuru,+Karnataka+572102&output=embed";
 
+  const mapsUrl =
+  "https://www.google.com/maps/search/?api=1&query=13.3340973,77.1131085";
+
   const mapEmbedUrl =
-  "https://www.google.com/maps?q=10th+A+Cross,+S+S+Puram,+Tumkuru,+Karnataka+572102&output=embed";
+  "https://www.google.com/maps?q=13.3340973,77.1131085&z=17&output=embed";
 
   return (
     <main className="contact-page">
